@@ -1,0 +1,472 @@
+:root {
+  --sabbahMainColor: #01d9c9;
+  --sabbahMainColor: #3eb489;
+  --sabbahMainColorHov: #04c9ba;
+  --sabbahMainColorFad: #04c9ba2e;
+  --sabbahMainColorLight: #01d9cbcd;
+
+  /* Text Colors */
+  --sabbahTextColor: #2a2a2a;
+
+  /* Button Colors */
+  --sabbahButtons: #3fa6a0;
+
+  /* Light Sections */
+  --sabbahLightSec: #fdf6ec;
+
+  --sabbahOverlayBg: #0000002d;
+  --sabbahWhiteColor: #ffffff;
+}
+
+:root {
+  /* Updated Mint Palette */
+  --sabbahMainColor: #3daa9e; /* Mint as main accent, slightly deeper */
+  --sabbahMainColorHov: #319589; /* Hover state, richer mint */
+  --sabbahMainColorFad: #3daa9e1a; /* Subtle transparent mint for fades */
+
+  /* Complementary Colors */
+  --sabbahTextColor: #2a2a2a; /* Dark charcoal for readability */
+  --sabbahButtons: #2e8b81; /* Stronger button accent */
+  --sabbahLightSec: #f4f7f6; /* Soft, cool background for light sections */
+  --sabbahOverlayBg: #00000033; /* Slightly more opaque for contrast */
+  --sabbahWhiteColor: #ffffff; /* Clean white */
+}
+
+.btn {
+  /* background-color: var(--sabbahMainColor); */
+  background-color: var(--sabbahButtons);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--sabbahMainColorHov);
+}
+
+* {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--sabbahTextColor);
+
+  .navbar {
+    height: 60px;
+    background-color: var(--sabbahMainColor);
+    width: 100%;
+    z-index: 10;
+
+    .content {
+      height: inherit;
+    }
+
+    .menu {
+      i,
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .links {
+      a {
+        color: white;
+        /* &:hover {
+          color: var(--sabbahMainColor);
+        } */
+      }
+    }
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ab;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+
+  /* ========================== */
+  /* ========== HERO ========== */
+  /* ========================== */
+
+  .hero {
+    background-color: var(--sabbahMainColor);
+    .content {
+      height: calc(100vh + 60px);
+      overflow: hidden;
+    }
+
+    .my-image {
+      position: relative;
+      width: 50%;
+      height: 100%;
+
+      @media (max-width: 769px) {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        filter: grayscale(1);
+      }
+    }
+
+    .titles {
+      width: 800px;
+
+      @media (max-width: 769px) {
+        width: 100%;
+      }
+      .description {
+        span {
+          color: #017266;
+          font-weight: 600;
+        }
+      }
+
+      .job-title {
+        position: relative;
+
+        .title-shape {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 10%;
+          right: -50px;
+
+          @media (max-width: 769px) {
+            transform: translate(-50%, -50%);
+            top: 10%;
+            left: 70%;
+          }
+
+          img {
+            height: 50px;
+          }
+        }
+      }
+    }
+
+    /* .contact_us {} */
+
+    .titles {
+      color: white;
+    }
+  }
+
+  .section {
+    /* .section-title {} */
+    /* title {} */
+    .boxes {
+      .box {
+        position: relative;
+        background-color: var(--sabbahMainColorFad);
+        .content {
+          .icon {
+            color: white;
+            background-color: var(--sabbahMainColorHov);
+          }
+        }
+
+        .shape {
+          /* position: absolute;
+          right: 10px;
+          top: 1rem; */
+          width: 40px;
+        }
+
+        &:hover {
+          background-color: var(--sabbahMainColor);
+          .icon {
+            background-color: white;
+            color: var(--sabbahTextColor);
+          }
+          color: white;
+
+          .shape {
+            img {
+              src: url("../images/shapes/circles-white.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ========================== */
+  /* ======== SERVICES ======== */
+  /* ========================== */
+
+  .services,
+  .projects,
+  .experience {
+    background-color: white;
+    .content {
+      .title {
+        text-transform: capitalize;
+        p {
+          position: relative;
+          font-weight: 600;
+          color: var(--sabbahMainColor);
+
+          &::before {
+            content: "";
+            width: 70px;
+            height: 2px;
+            background-color: var(--sabbahMainColor);
+            position: absolute;
+            top: 50%;
+            right: -100%;
+            border-radius: 2rem;
+          }
+          &::after {
+            content: "";
+            width: 70px;
+            height: 2px;
+            background-color: var(--sabbahMainColor);
+            position: absolute;
+            top: 50%;
+            left: -100%;
+            border-radius: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* ========================== */
+  /* ======== SERVICES ======== */
+  /* ========================== */
+  .projects {
+    background-color: var(--sabbahMainColorFad);
+    .content {
+      .title {
+        p {
+          &::before {
+            right: -55%;
+          }
+
+          &::after {
+            left: -55%;
+          }
+        }
+      }
+
+      .box {
+        background-color: white;
+        box-shadow: 0 0 17px 2px #11766a36;
+
+        .visit {
+          border: 2px solid var(--sabbahMainColor);
+          color: var(--sabbahMainColor);
+        }
+
+        &:hover {
+          background-color: white;
+          color: var(--sabbahTextColor);
+        }
+
+        .visit {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 0;
+            transition: 0.6s;
+            background-color: var(--sabbahMainColorFad);
+          }
+
+          &:hover {
+            /* background-color: var(--sabbahMainColor); */
+            /* color: white; */
+
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .image {
+        height: 250px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  /* ========================== */
+  /* ======== ABOUT ME ======== */
+  /* ========================== */
+  .about {
+    background-color: var(--sabbahMainColor);
+
+    .title {
+      color: white;
+    }
+
+    .about_title {
+      .title-shape {
+        position: absolute;
+        right: -30px;
+        top: -5px;
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    .my-experience {
+      .years {
+        color: var(--sabbahButtons);
+      }
+    }
+    .my-image {
+      position: relative;
+      img {
+        height: 360px;
+        z-index: 2;
+        position: relative;
+        filter: grayscale(1);
+        border-radius: 25px;
+      }
+
+      .item {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: var(--sabbahButtons);
+          bottom: 0;
+          border-radius: 20px;
+          height: 80%;
+          left: -5px;
+          transform: skewX(7deg);
+          width: 60%;
+          z-index: 1;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #dfdfdf;
+          bottom: 0;
+          border-radius: 20px;
+          height: 60%;
+          right: -5px;
+          transform: skewX(-7deg);
+          width: 60%;
+          z-index: 1;
+        }
+      }
+    }
+
+    .contact {
+      .btn {
+        white-space: nowrap;
+      }
+
+      input {
+        &::placeholder {
+          color: #e6e6e6;
+        }
+      }
+    }
+  }
+}
+
+/* ========================== */
+/* ========= SKILLS ========= */
+/* ========================== */
+.experience {
+  .content {
+    .title {
+      p {
+        &::before {
+          right: -55% !important;
+        }
+
+        &::after {
+          left: -55% !important;
+        }
+      }
+    }
+
+    .education,
+    .skills,
+    .other-skills {
+      .skills {
+        background-color: var(--sabbahMainColor);
+        color: white;
+        overflow-x: auto;
+
+        .name {
+          background-color: var(--sabbahMainColorHov);
+          padding: 4px 20px;
+          white-space: nowrap;
+          border-radius: inherit;
+          position: relative;
+
+          &::after {
+            content: "☄️";
+            content: "⚡️";
+            content: "⭐️";
+            content: "✨";
+            filter: grayscale(1);
+            filter: brightness(10);
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: -44px;
+          }
+
+          &:last-child {
+            &::after {
+              content: "";
+              display: none;
+            }
+          }
+        }
+
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, and other WebKit browsers */
+        }
+      }
+      .edu {
+        .item {
+          background-color: var(--sabbahMainColorFad);
+          /* .name {} */
+          .year {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ========================== */
+/* ========= FOOTER ========= */
+/* ========================== */
+footer {
+  background-color: var(--sabbahMainColor);
+
+  .links {
+    .link {
+      background-color: var(--sabbahButtons);
+    }
+  }
+}

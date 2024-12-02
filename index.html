@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabbah Eltaj</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="app/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="app/css/style.css" />
+    <link rel="stylesheet" href="app/css/tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- ================ -->
+    <!-- ==== NAVBAR ==== -->
+    <!-- ================ -->
+
+    <nav class="navbar">
+      <div
+        class="content max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4"
+      >
+        <div class="links hidden md:flex items-center">
+          <a href="#services" class="me-3.5">Services</a>
+          <a href="#projects" class="me-3.5">Projects</a>
+          <a href="#about" class="me-3.5">About</a>
+          <a href="#contact" class="me-3.5">Contact</a>
+          <a href="#experience" class="me-3.5">Skills</a>
+        </div>
+
+        <div class="menu text-white block md:hidden">
+          <i data-lucide="menu"></i>
+        </div>
+
+        <div class="contact">
+          <a href="#contact" class="btn px-4 py-2 flex rounded-md">
+            <span>Contact</span>
+            <i data-lucide="mailbox" class="ms-1 w-5"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero select-none">
+      <div class="content max-w-screen-xl px-4 m-auto flex md:items-center">
+        <div class="titles md:text-center m-auto">
+          <div class="flex flex-col h-full md:items-center">
+            <h1
+              class="font-bold text-6xl md:text-7xl mb-1 text-left md:text-center title"
+            >
+              <div class="job-title">
+                A web developer &amp;
+                <div class="title-shape">
+                  <img src="app/images/shapes/shape1.png" alt="" />
+                </div>
+              </div>
+              Computer Networks Student
+            </h1>
+            <p class="description text-lg">
+              I am <span>Sabbah Eltaj</span> a web developer specializing in
+              creating responsive, user-friendly websites and web applications.
+              I focus on clean code, modern design, and seamless user
+              experiences to bring digital ideas to life.
+            </p>
+
+            <button
+              class="flex items-center btn px-8 py-2 mt-3 rounded-full text-lg w-fit font-medium"
+            >
+              <span>Contact us now</span>
+              <i data-lucide="send-horizontal" class="ms-1.5 w-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services section select-none py-16" id="services">
+      <div class="all">
+        <div class="content max-w-screen-xl px-4 m-auto">
+          <div class="title text-center w-fit m-auto">
+            <p>What I do</p>
+          </div>
+          <div class="section-title text-center">
+            <h4 class="font-bold text-2xl">Services &amp; Solutions</h4>
+          </div>
+
+          <div class="boxes grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="code" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">Web Development</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="server" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">Web Hosting</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="brain-circuit" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">AI Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="file-chart-pie" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">
+                  Software Analysis
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="pen-tool" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">Branding Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+
+            <!-- Box -->
+            <div class="box p-3 py-4 rounded-lg cursor-pointer">
+              <div class="content flex flex-col">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="icon rounded-full h-10 w-10 flex items-center justify-center"
+                  >
+                    <i data-lucide="bug" class="w-5"></i>
+                  </div>
+
+                  <div class="shape">
+                    <img
+                      src="app/images/shapes/circles.svg"
+                      class="shape-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <h4 class="title font-bold text-xl my-2.5">Site development</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects section select-none py-16" id="projects">
+      <!-- <div class="all"> -->
+      <div class="content max-w-screen-xl px-4 m-auto">
+        <div class="title text-center w-fit m-auto">
+          <p>My achievements</p>
+        </div>
+        <div class="section-title text-center">
+          <h4 class="font-bold text-2xl">My creativity Projects</h4>
+        </div>
+
+        <div
+          class="boxes grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"
+        >
+          <!-- Box -->
+          <div class="box rounded-xl cursor-pointer">
+            <div class="content flex flex-col">
+              <div class="flex items-center flex-col">
+                <div class="image rounded-rt-xl rounded-t-xl">
+                  <img src="app/images/projects/project1.png" alt="" />
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h4 class="title font-semibold text-xl mb-3">
+                  Student &amp; Result management system for (FOM)
+                </h4>
+
+                <a
+                  href="#"
+                  class="visit flex items-center font-semibold px-6 w-fit py-2 rounded-lg"
+                >
+                  <span>Visit resource</span>
+                  <i data-lucide="external-link" class="w-5 ms-1"></i>
+                </a>
+                <p class="hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box -->
+          <div class="box rounded-xl cursor-pointer">
+            <div class="content flex flex-col">
+              <div class="flex items-center flex-col">
+                <div class="image rounded-rt-xl rounded-t-xl">
+                  <img src="app/images/projects/project2.png" alt="" />
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h4 class="title font-semibold text-xl mb-3">
+                  Social Media Platform with respectful features
+                </h4>
+
+                <a
+                  href="#"
+                  class="visit flex items-center font-semibold px-6 w-fit py-2 rounded-lg"
+                >
+                  <span>Visit resource</span>
+                  <i data-lucide="external-link" class="w-5 ms-1"></i>
+                </a>
+                <p class="hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box -->
+          <div class="box rounded-xl cursor-pointer">
+            <div class="content flex flex-col">
+              <div class="flex items-center flex-col">
+                <div class="image rounded-rt-xl rounded-t-xl">
+                  <img src="app/images/projects/project3.png" alt="" />
+                </div>
+              </div>
+
+              <div class="p-3">
+                <h4 class="title font-semibold text-xl mb-3">
+                  A news website with full admin dashboard control
+                </h4>
+
+                <a
+                  href="#"
+                  class="visit flex items-center font-semibold px-6 w-fit py-2 rounded-lg"
+                >
+                  <span>Visit resource</span>
+                  <i data-lucide="external-link" class="w-5 ms-1"></i>
+                </a>
+                <p class="hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  dolor ab voluptates sunt quisquam adipisci quam deserunt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>  
+
+    <!-- About -->
+    <div class="about section select-none py-16" id="about">
+      <div class="content max-w-screen-xl px-4 m-auto">
+        <div class="title text-left w-fit text-3xl mb-2 font-semibold">
+          <div class="about_title flex relative">
+            <h1>About me</h1>
+            <div class="title-shape">
+              <img src="app/images/shapes/shape1.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-start flex-col md:flex-row">
+          <div class="about-title md:w-1/2">
+            <p class="title text-left w-fit text-xl font-semibold">
+              <i></i>
+              <q
+                >The function of good software is to make the complex appear to
+                be simple.</q
+              >
+            </p>
+            <p class="text-lg text-gray-200">
+              My name is Sabbah Eltaj. I have been studying web development
+              since November 2021. I love programming and creating reliable web
+              apps.
+            </p>
+            <div class="my-experience flex items-center mt-4">
+              <div class="years text-5xl me-2 font-bold">2</div>
+              <span class="text-white text-sm font-semibold"
+                >Years Of<br />Experience</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="my-image w-full md:w-1/2 flex justify-center md:justify-center mt-8"
+          >
+            <div class="item">
+              <img src="app/images/personal/me4.png" class="" alt="My photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience section select-none py-16" id="experience">
+      <!-- <div class="all"> -->
+      <div class="content max-w-screen-xl px-4 m-auto">
+        <div class="title text-center w-fit m-auto">
+          <p>experience &amp; Skills</p>
+        </div>
+        <div class="section-title text-center">
+          <h4 class="font-bold text-2xl">Learning &amp; Work Journey</h4>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <!-- Education -->
+          <div class="education">
+            <div class="title mb-3">
+              <h4 class="font-semibold text-2xl">My Education</h4>
+            </div>
+
+            <div class="edu">
+              <div class="flex flex-col">
+                <div
+                  class="item flex items-start justify-between p-4 rounded-lg mb-3"
+                >
+                  <div class="name me-3 flex flex-col">
+                    <h5 class="font-medium text-lg">Dar-Aloloom Secondary</h5>
+                    <p class="text-gray-400 text-sm">Computer Science</p>
+                  </div>
+                  <div class="year px-3 py-1 rounded-lg font-medium">
+                    2017 - 2020
+                  </div>
+                </div>
+                <div
+                  class="item flex items-start justify-between p-4 rounded-lg"
+                >
+                  <div class="name me-3 flex flex-col">
+                    <h5 class="font-medium text-lg">Al-Qadarif University</h5>
+                    <p class="text-gray-400 text-sm">Computer Networks</p>
+                  </div>
+                  <div class="year px-3 py-1 rounded-lg font-medium">
+                    2020 - now
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills">
+            <div class="title mb-3">
+              <h4 class="font-semibold text-2xl">My Skills</h4>
+            </div>
+
+            <div class="edu">
+              <div class="flex flex-col">
+                <div
+                  class="item flex items-start justify-between p-4 rounded-lg mb-3"
+                >
+                  <div class="name me-3 flex flex-col">
+                    <h5 class="font-medium text-lg">Web developer</h5>
+                    <p class="text-gray-400 text-sm">
+                      PHP Laravel - self-employed
+                    </p>
+                  </div>
+                  <div class="year px-3 py-1 rounded-lg font-medium">
+                    Nov . 2022 - now
+                  </div>
+                </div>
+                <div
+                  class="item flex items-start justify-between p-4 rounded-lg"
+                >
+                  <div class="name me-3 flex flex-col">
+                    <h5 class="font-medium text-lg">UI UX Designer</h5>
+                    <p class="text-gray-400 text-sm">
+                      Figma - Lunacy - Adobe XD
+                    </p>
+                  </div>
+                  <div class="year px-3 py-1 rounded-lg font-medium">
+                    Dec . 2024 - now
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Other Skills -->
+        <div class="mt-5 other-skills">
+          <div class="mb-3">
+            <h4 class="font-semibold text-2xl leading-none">Other Skills</h4>
+            <p class="text-gray-400">Scroll to view all skills</p>
+          </div>
+
+          <div class="edu">
+            <!-- 🌙🌎🌍🌏🪐💫⭐️🌟✨⚡️☄️💥🔥 -->
+            <div class="flex flex-col">
+              <div class="skills flex items-center gap-8 p-4 rounded-lg mb-3">
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">Tailwind CSS</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">Bootstrap</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">JavaScript</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">jQuery</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">Linux</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">JavaScript</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">PugJS</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">MS Office</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">Adobe</h5>
+                </div>
+                <div class="name me-3 flex flex-col">
+                  <h5 class="font-medium text-lg">Git</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <footer class="select-none py-10" id="">
+      <!-- <div class="all"> -->
+      <div
+        class="content max-w-screen-xl px-4 m-auto text-white flex justify-center flex-col md:flex-row md:justify-between items-center"
+      >
+        <div class="title text-center md:text-left md:text-left w-fit">
+          <h1 class="font-bold text-3xl text-white leading-none">
+            Sabbah Eltaj
+          </h1>
+          <p class="text-gray-200">Web Developer</p>
+
+          <div class="links flex items-center mt-3">
+            <a
+              href=""
+              class="link px-3 py-1.5 rounded-md me-3 flex items-center"
+              ><i data-lucide="github" class="me-1"></i><span>Github</span></a
+            >
+            <a
+              href=""
+              class="link px-3 py-1.5 rounded-md me-3 flex items-center"
+              ><i data-lucide="twitter" class="me-1"></i><span>Twitter</span></a
+            >
+            <a href="" class="link px-3 py-1.5 rounded-md flex items-center"
+              ><i data-lucide="linkedin" class="me-1"></i
+              ><span>Linkedin</span></a
+            >
+          </div>
+        </div>
+
+        <div class="copyright mt-6 md:mt-0">
+          <p>All rights reserved &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app/js/jquery.js"></script>
+    <script src="app/js/lucide.min.js"></script>
+    <script src="app/js/wow.js"></script>
+    <script src="app/js/scripts.js"></script>
+  </body>
+</html>

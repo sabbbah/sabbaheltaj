@@ -1,0 +1,12 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Remove .html, .css, .js extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f [OR]
+RewriteCond %{REQUEST_FILENAME}\.css -f [OR]
+RewriteCond %{REQUEST_FILENAME}\.js -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Default to index.html
+DirectoryIndex index.html
