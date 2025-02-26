@@ -34,14 +34,16 @@
 
 .btn {
   /* background-color: var(--sabbahMainColor); */
-  background-color: var(--sabbahButtons);
+  /* background-color: var(--sabbahButtons); */
+  background-color: #242829;
   border: none;
   color: white;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--sabbahMainColorHov);
+  /* background-color: var(--sabbahMainColorHov); */
+  background-color: #292d2e;
 }
 
 * {
@@ -131,7 +133,8 @@ body {
 
       .description {
         span {
-          color: #017266;
+          /* color: #ffeb3b; */
+          color: #242829;
           font-weight: 600;
         }
       }
@@ -390,7 +393,7 @@ body {
 
 @media (max-width: 769px) {
   .main-title {
-    font-size: 3.40rem !important;
+    font-size: 3.4rem !important;
   }
 }
 
