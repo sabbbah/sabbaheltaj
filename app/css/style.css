@@ -127,11 +127,8 @@ body {
 
       @media (max-width: 769px) {
         width: 100%;
-
-        .main-title {
-          font-size: 3.55rem;
-        }
       }
+
       .description {
         span {
           color: #017266;
@@ -388,6 +385,12 @@ body {
         }
       }
     }
+  }
+}
+
+@media (max-width: 769px) {
+  .main-title {
+    font-size: 3.50rem !important;
   }
 }
 
