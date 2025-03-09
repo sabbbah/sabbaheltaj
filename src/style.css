@@ -2255,6 +2255,12 @@ body .navbar .links::before {
   border-right: 10px solid transparent;
   border-bottom: 20px solid rgba(42, 197, 96, 0.1411764706);
   z-index: 1;
+  display: none;
+}
+@media (max-width: 769px) {
+  body .navbar .links::before {
+    display: block;
+  }
 }
 @media (max-width: 769px) {
   body .navbar .links {
@@ -2283,6 +2289,18 @@ body .navbar .links::before {
   body .navbar .links a i {
     margin-left: 10px;
     color: #0ad184;
+  }
+}
+body .navbar .links svg,
+body .navbar .links i {
+  margin-left: 10px;
+  color: #0ad184;
+  display: none !important;
+}
+@media (max-width: 769px) {
+  body .navbar .links svg,
+  body .navbar .links i {
+    display: block !important;
   }
 }
 body .overlay {

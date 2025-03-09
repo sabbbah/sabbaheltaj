@@ -2369,6 +2369,10 @@ body {
         border-right: 10px solid transparent;
         border-bottom: 20px solid #2ac56024;
         z-index: 1;
+        display: none;
+        @media (max-width: 769px) {
+          display: block;
+        }
       }
 
       @media (max-width: 769px) {
@@ -2398,6 +2402,17 @@ body {
             margin-left: 10px;
             color: #0ad184;
           }
+        }
+      }
+
+      svg,
+      i {
+        margin-left: 10px;
+        color: #0ad184;
+        display: none !important;
+
+        @media (max-width: 769px) {
+          display: block !important;
         }
       }
     }
