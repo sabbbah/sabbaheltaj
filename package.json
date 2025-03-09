@@ -1,0 +1,15 @@
+{
+  "name": "sabbahar",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000a\u0000b\u0000b\u0000a\u0000h\u0000e\u0000l\u0000a\u0000t\u0000j\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.11",
+    "tailwindcss": "^4.0.11"
+  }
+}
