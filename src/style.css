@@ -2357,17 +2357,18 @@ body .hero .titles .job-title .rest-of-title {
   background: linear-gradient(297deg, #48e96c, rgb(1, 217, 201));
   -webkit-background-clip: text;
           background-clip: text;
-  font-size: 4rem;
+  font-size: 6rem;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 769px) {
   body .hero .titles .job-title .rest-of-title {
-    font-size: 3.3rem;
+    font-size: 3.7rem;
   }
 }
 body .hero .titles .job-title .highlighted {
   font-size: 4rem !important;
-  margin-bottom: 1.4rem;
+  margin: auto;
+  margin-bottom: 2rem;
   position: relative;
   color: #b9b9b9;
   width: -moz-fit-content;

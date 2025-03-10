@@ -2483,19 +2483,18 @@ body {
           font-weight: 900;
           background: linear-gradient(297deg, #48e96c, rgb(1 217 201));
           background-clip: text;
-          font-size: 4rem;
-          // background-size: cover;
-          // display: inline;
+          font-size: 6rem;
           -webkit-text-fill-color: transparent;
 
           @media (max-width: 769px) {
-            font-size: 3.3rem;
+            font-size: 3.7rem;
           }
         }
 
         .highlighted {
           font-size: 4rem !important;
-          margin-bottom: 1.4rem;
+          margin: auto;
+          margin-bottom: 2rem;
           position: relative;
           color: #b9b9b9;
           width: fit-content;
