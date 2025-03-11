@@ -2396,6 +2396,8 @@ body {
           padding: 15px 25px;
           background: #2ac56024;
           margin-left: 0;
+          // transform: translateX(400px);
+          // overflow: hidden;
 
           svg,
           i {
@@ -2478,6 +2480,7 @@ body {
 
       .job-title {
         color: black;
+
         .rest-of-title {
           position: relative;
           font-weight: 900;
@@ -2529,6 +2532,12 @@ body {
           }
         }
       }
+
+      //   .char {
+      //     opacity: 0;
+      // transform: translateY(20px);
+      // display: inline-block;
+      //   }
 
       .aurora {
         position: absolute;
@@ -2709,6 +2718,12 @@ body {
           animation: moveRocket 1s infinite linear;
         }
       }
+    }
+
+    .char {
+      opacity: 0;
+      transform: translateY(20px);
+      display: inline-block;
     }
 
     @keyframes moveRocket {

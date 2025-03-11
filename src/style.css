@@ -2538,6 +2538,11 @@ body .hero .titles .discover-projects .godown {
   transform: rotate(90deg);
   animation: moveRocket 1s infinite linear;
 }
+body .hero .char {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+}
 @keyframes moveRocket {
   0% {
     transform: translateY(0) rotate(90deg);

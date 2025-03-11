@@ -9,7 +9,8 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="app/images/logo/favicon.ico" type="image/x-icon" />
 
-  <!-- Fonts -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
   <!-- CSS -->
   <!-- <link rel="stylesheet" href="src/output.css" /> -->
@@ -71,29 +72,20 @@
         <div class="flex flex-col h-full items-center">
           <h1 class="cursor typewriter-animation main-title font-extrabold text-6xl md:text-7xl mb-3 title">
             <div class="mb-3 job-title">
-              <div class="highlighted text-start">
+              <div data-aos="zoom-in" data-aos-duration="1000" class="highlighted text-start">
                 <div class="text w-fit">مُطور ويب</div>
                 <div class="shape"></div>
               </div>
-              <div class="rest-of-title"> وطالب شبكات الحاسوب
-
-                <div class="aurora hidden">
-                  <div class="aurora__item"></div>
-                  <div class="aurora__item"></div>
-                  <div class="aurora__item"></div>
-                  <div class="aurora__item"></div>
-                </div>
-              </div>
+              <div data-aos="zoom-in" data-aos-duration="1800" class="rest-of-title">وطالب شبكات الحاسوب</div>
             </div>
           </h1>
 
-
-          <p class="description text-lg font-medium">
-            أنا <span>صبّاح التاج</span> مطور ويب مهمتي 
-             إنشاء مواقع وتطبيقات ويب متوافقة مع جميع الأجهزة وسهلة الاستخدام،
+          <p data-aos="zoom-in" data-aos-duration="1900" class="description text-lg font-medium">
+            أنا <span>صبّاح التاج</span> مطور ويب مهمتي
+            إنشاء مواقع وتطبيقات ويب متوافقة مع جميع الأجهزة وسهلة الاستخدام،
             تواصل معي إن كنت تحتاج إلى خدمة</p>
 
-          <button class="discover-projects flex items-center btn px-8 py-2 mt-3 rounded-full text-lg w-fit font-medium">
+          <button data-aos="zoom-in" data-aos-duration="2200" class="discover-projects flex items-center btn px-8 py-2 mt-3 rounded-full text-lg w-fit font-medium">
             <span>إستكشف أعمالي</span>
             <i data-lucide="send-horizontal" class="godown ms-1.5 w-5"></i>
           </button>
@@ -101,10 +93,15 @@
       </div>
     </div>
 
-    <div class="wavy-shape w-full">
-      <!-- <div class="box1"></div>
-      <div class="box2"></div> -->
+    <!-- <div class="aurora hidden">
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+      </div> -->
 
+
+    <div class="wavy-shape w-full">
       <svg viewBox="0 0 2 1" preserveAspectRatio="none">
         <defs>
           <path id="w" d="
@@ -128,16 +125,18 @@
   <div class="services section select-none py-16" id="services">
     <div class="all">
       <div class="content max-w-screen-xl px-4 m-auto">
-        <div class="title text-center w-fit m-auto">
-          <p>ماذا أفعل</p>
-        </div>
-        <div class="section-title text-center">
-          <h4 class="font-extrabold text-3xl">الخدمات</h4>
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <div class="title text-center w-fit m-auto">
+            <p>ماذا أفعل</p>
+          </div>
+          <div class="section-title text-center">
+            <h4 class="font-extrabold text-3xl">الخدمات</h4>
+          </div>
         </div>
 
         <div class="boxes grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           <!-- Box -->
-          <div class="box p-3 py-4 rounded-lg cursor-pointer">
+          <div data-aos="fade-up" data-aos-duration="1000" class="box p-3 py-4 rounded-lg cursor-pointer">
             <div class="content flex flex-col">
               <div class="flex items-center justify-between">
                 <div class="icon rounded-full h-10 w-10 flex items-center justify-center">
@@ -152,7 +151,7 @@
           </div>
 
           <!-- Box -->
-          <div class="box p-3 py-4 rounded-lg cursor-pointer">
+          <div data-aos="fade-up" data-aos-duration="2000" class="box p-3 py-4 rounded-lg cursor-pointer">
             <div class="content flex flex-col">
               <div class="flex items-center justify-between">
                 <div class="icon rounded-full h-10 w-10 flex items-center justify-center">
@@ -168,7 +167,7 @@
           </div>
 
           <!-- Box -->
-          <div class="box p-3 py-4 rounded-lg cursor-pointer">
+          <div data-aos="fade-up" data-aos-duration="2500" class="box p-3 py-4 rounded-lg cursor-pointer">
             <div class="content flex flex-col">
               <div class="flex items-center justify-between">
                 <div class="icon rounded-full h-10 w-10 flex items-center justify-center">
@@ -183,7 +182,7 @@
           </div>
 
           <!-- Box -->
-          <div class="box p-3 py-4 rounded-lg cursor-pointer">
+          <div data-aos="fade-up" data-aos-duration="3000" class="box p-3 py-4 rounded-lg cursor-pointer">
             <div class="content flex flex-col">
               <div class="flex items-center justify-between">
                 <div class="icon rounded-full h-10 w-10 flex items-center justify-center">
@@ -207,16 +206,19 @@
   <div class="projects section select-none py-16" id="projects">
     <!-- <div class="all"> -->
     <div class="content max-w-screen-xl px-4 m-auto">
-      <div class="title text-center w-fit m-auto">
-        <p>إنجازاتي البرمجية</p>
-      </div>
-      <div class="section-title text-center">
-        <h4 class="font-bold text-3xl">أعمالي ومشاريعي</h4>
+
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div class="title text-center w-fit m-auto">
+          <p>إنجازاتي البرمجية</p>
+        </div>
+        <div class="section-title text-center">
+          <h4 class="font-bold text-3xl">أعمالي ومشاريعي</h4>
+        </div>
       </div>
 
       <div class="boxes grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         <!-- Box -->
-        <div class="box rounded-xl cursor-pointer">
+        <div data-aos="fade-up" data-aos-duration="1000" class="box rounded-xl cursor-pointer">
           <div class="content flex flex-col">
             <div class="flex items-center flex-col">
               <div class="image rounded-rt-xl rounded-t-xl">
@@ -242,7 +244,7 @@
         </div>
 
         <!-- Box -->
-        <div class="box rounded-xl cursor-pointer">
+        <div data-aos="fade-up" data-aos-duration="1500" class="box rounded-xl cursor-pointer">
           <div class="content flex flex-col">
             <div class="flex items-center flex-col">
               <div class="image rounded-rt-xl rounded-t-xl">
@@ -269,7 +271,7 @@
         </div>
 
         <!-- Box -->
-        <div class="box rounded-xl cursor-pointer">
+        <div data-aos="fade-up" data-aos-duration="2000" class="box rounded-xl cursor-pointer">
           <div class="content flex flex-col">
             <div class="flex items-center flex-col">
               <div class="image rounded-rt-xl rounded-t-xl">
@@ -302,7 +304,7 @@
   <div class="about section select-none py-16" id="about">
     <div class="content max-w-screen-xl px-4 m-auto">
       <div class="title text-left w-fit text-3xl mb-2 font-semibold">
-        <div class="about_title flex relative">
+        <div data-aos="fade-up" data-aos-duration="1000" class="about_title flex relative">
           <h1>نبذة عني</h1>
           <div class="title-">
             <img src="app/images/s/1.png" alt="" />
@@ -311,7 +313,7 @@
       </div>
 
       <div class="flex items-start flex-col md:flex-row">
-        <div class="about-title md:w-1/2">
+        <div data-aos="fade-up" data-aos-duration="2000" class="about-title md:w-1/2">
           <p class="title w-fit text-start text-xl font-semibold">
             <q>وظيفة البرمجيات الجيدة هي جعل المعقد يبدو بسيطًا</q>
           </p>
@@ -324,7 +326,8 @@
           </div>
         </div>
 
-        <div class="my-image w-full md:w-1/2 flex justify-center md:justify-center mt-8">
+        <div data-aos="fade-up" data-aos-duration="2600"
+          class="my-image w-full md:w-1/2 flex justify-center md:justify-center mt-8">
           <div class="item">
             <img src="app/images/personal/me3.png" class="" alt="My photo" />
           </div>
@@ -337,16 +340,19 @@
   <div class="experience section select-none py-16" id="experience">
     <!-- <div class="all"> -->
     <div class="content max-w-screen-xl px-4 m-auto">
-      <div class="title text-center w-fit m-auto">
-        <p>خبراتي ومهاراتي</p>
-      </div>
-      <div class="section-title text-center">
-        <h4 class="font-bold text-3xl">رحلة التعلم والعمل</h4>
+
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div class="title text-center w-fit m-auto">
+          <p>خبراتي ومهاراتي</p>
+        </div>
+        <div class="section-title text-center">
+          <h4 class="font-bold text-3xl">رحلة التعلم والعمل</h4>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <!-- Education -->
-        <div class="education">
+        <div data-aos="fade-up" data-aos-duration="1000" class="education">
           <div class="title mb-3">
             <h4 class="font-semibold text-2xl">التعليم</h4>
           </div>
@@ -376,7 +382,7 @@
         </div>
 
         <!-- Skills -->
-        <div class="skills">
+        <div data-aos="fade-up" data-aos-duration="2000" class="skills">
           <div class="title mb-3">
             <h4 class="font-semibold text-2xl">مهاراتي</h4>
           </div>
@@ -410,7 +416,7 @@
         </div>
       </div>
       <!-- Other Skills -->
-      <div class="mt-5 other-skills">
+      <div data-aos="fade-up" data-aos-duration="2500" class="mt-5 other-skills">
         <div class="mb-3">
           <h4 class="font-semibold text-2xl leading-none">مهارات آخرى</h4>
           <p class="text-gray-400">Scroll to view all skills</p>
@@ -492,6 +498,11 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script src="app/js/lucide.min.js"></script>
   <script src="app/js/wow.js"></script>
+  <!-- <script src="node_modules/animejs/lib/anime.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  <script src="node_modules/aos/dist/aos.js"></script>
+
+  <!-- <script src="src/anime.js"></script> -->
   <script src="app/js/scripts.js"></script>
 </body>
 
