@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#009b7d" />
+
   <title>صبّاح التاج</title>
 
   <!-- Favicon -->
@@ -21,32 +23,41 @@
 <body>
 
   <div class="overlay"></div>
+  <div class="toTop">
+    <i data-lucide="chevron-up"></i>
+  </div>
+
+
   <!-- ================ -->
   <!-- ==== NAVBAR ==== -->
   <!-- ================ -->
   <nav class="navbar">
     <div class="content max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
 
-      <div class="links md:flex items-center">
+      <div class="links cl-effect-5 md:flex items-center">
+        <a href="#" class="me-3.5">
+          <i data-lucide="home"></i>
+          <span data-hover="الرئيسية">الرئيسية</span>
+        </a>
         <a href="#services" class="me-3.5">
           <i data-lucide="hand-platter"></i>
-          <span>خدماتي</span>
+          <span data-hover="خدماتي">خدماتي</span>
         </a>
         <a href="#projects" class="me-3.5">
           <i data-lucide="folder-git-2"></i>
-          <span>مشاريعي</span>
+          <span data-hover="مشاريعي">مشاريعي</span>
         </a>
         <a href="#contact" class="me-3.5">
           <i data-lucide="inbox"></i>
-          <span>تواصل معي</span>
+          <span data-hover="تواصل معي">تواصل معي</span>
         </a>
         <a href="#experience" class="me-3.5">
           <i data-lucide="sparkles"></i>
-          <span>مهاراتي</span>
+          <span data-hover="مهاراتي">مهاراتي</span>
         </a>
         <a href="#about" class="me-3.5">
           <i data-lucide="smile"></i>
-          <span>نبذة عني</span>
+          <span data-hover="نبذة عني">نبذة عني</span>
         </a>
       </div>
 
@@ -85,7 +96,8 @@
             إنشاء مواقع وتطبيقات ويب متوافقة مع جميع الأجهزة وسهلة الاستخدام،
             تواصل معي إن كنت تحتاج إلى خدمة</p>
 
-          <button data-aos="zoom-in" data-aos-duration="2200" class="discover-projects flex items-center btn px-8 py-2 mt-3 rounded-full text-lg w-fit font-medium">
+          <button data-aos="zoom-in" data-aos-duration="2200"
+            class="discover-projects flex items-center btn px-8 py-2 mt-3 rounded-full text-lg w-fit font-medium">
             <span>إستكشف أعمالي</span>
             <i data-lucide="send-horizontal" class="godown ms-1.5 w-5"></i>
           </button>
@@ -501,6 +513,7 @@
   <!-- <script src="node_modules/animejs/lib/anime.js"></script> -->
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="app/js/csstransforms.js"></script>
 
   <!-- <script src="src/anime.js"></script> -->
   <script src="app/js/scripts.js"></script>
