@@ -16,6 +16,7 @@
 
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="src/output.css" /> -->
+    <link rel="stylesheet" href="src/bootstrap.min.css">
     <link rel="stylesheet" href="src/style.css" />
 </head>
 
@@ -31,14 +32,14 @@
     <!-- ==== NAVBAR ==== -->
     <!-- ================ -->
     <nav class="navbar">
-        <div class="content max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+        <div class="content max-w-screen-xl d-flex flex-wrap items-center w-full justify-between mx-auto px-4">
 
             <div class="md:flex items-center">
-                <h1 class="m-0 font-bold select-none">صبّاح التاج</h1>
+                <h5 class="m-0 fw-bold select-none">صبّاح التاج</h5>
             </div>
 
             <div class="contact">
-                <a href="#contact" class="px-4 py-2 flex rounded-full">
+                <a href="#contact" class="flex nav-link rounded-full">
                     <i data-lucide="mail" class="ms-1 w-5"></i>
                 </a>
             </div>
@@ -49,20 +50,90 @@
         <div class="content max-w-screen-xl px-4 m-auto">
             <div class="offers">
                 <div class="section programming">
-                    <div class="title text-right">
-                        <h1 class="service-type text-2xl font-semibold">خدمات البرمجة</h1>
+                    <div class="title">
+                        <h3 class="service-type font-bold">خدمات برمجة وتصميم المواقع</h3>
                         <p class="desc">خدمات البرمجة التي أقدمها</p>
                     </div>
 
-                    <div class="work-services grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="work-services text-center grid grid-cols-1 md:grid-cols-3 gap-4">
+                        
+                        <!-- 1 -->
                         <div class="service p-3 rounded-md">
-                            <h2 class="font-semibold text-2xl">تصميم الموقع</h2>
-                            <p>تصميم الموقع بإستخدام تقنيات التصميم</p>
+                            <div class="image mb-4">
+                                <img src="app/images/imgs/designer.svg" alt="">
+                            </div>
 
+                            <h4 class="font-bold">تصميم الموقع (Frontend)</h4>
 
-                            <h4 class="font-semibold mt-5">التقنيات التي أستخدمها</h4>
+                            <ul class="list-unstyled">
+                                <li>✅ تصميم الواجهة</li>
+                                <li>✅ تصميم جزاب</li>
+                                <li>❌ قاعدة بيانات</li>
+                                <li>❌ برمجة السيرفر</li>
+                                <li></li>
+                            </ul>
+
+                            <div class="price my-2 text-center rounded-xl font-extrabold w-fit m-auto px-5 py-2">
+                                <span class="price-text">200 دولار للموقع</span>
+                            </div>
+
+                            <p class="font-semibold mb-0 mt-3">التقنيات التي أستخدمها</p>
                             <div class="techniques mt-3">
                                 <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="service p-3 rounded-md">
+                            <div class="image mb-4">
+                                <img src="app/images/imgs/server.svg" alt="">
+                            </div>
+
+                            <h4 class="font-bold">برمجة الموقع (Backend)</h4>
+
+                            <ul class="list-unstyled">
+                                <li>❌ تصميم الواجهة</li>
+                                <li>❌ تصميم جزاب</li>
+                                <li>❌ قاعدة بيانات</li>
+                                <li>✅ برمجة السيرفر</li>
+                                <li></li>
+                            </ul>
+
+                            <div class="price my-2 text-center rounded-xl font-extrabold w-fit m-auto px-5 py-2">
+                                <span class="price-text">500 دولار للموقع</span>
+                            </div>
+
+                            <p class="font-semibold mb-0 mt-3">التقنيات التي أستخدمها</p>
+                            <div class="techniques mt-3">
+                                <span>PHP / Laravel</span>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="service p-3 rounded-md">
+                            <div class="image mb-4">
+                                <img src="app/images/imgs/designer.svg" alt="">
+                            </div>
+
+                            <h4 class="font-bold">موقع ديناميكي (Fullstack)</h4>
+
+                            <ul class="list-unstyled">
+                                <li>✅ تصميم الواجهة</li>
+                                <li>✅ تصميم جزاب</li>
+                                <li>✅ قاعدة بيانات</li>
+                                <li>✅ برمجة السيرفر</li>
+                                <li>✅ إستضافة الموقع</li>
+                            </ul>
+
+                            <div class="price my-2 text-center rounded-xl font-extrabold w-fit m-auto px-5 py-2">
+                                <span class="price-text">1000 دولار للموقع</span>
+                            </div>
+
+                            <p class="font-semibold mb-0 mt-3">التقنيات التي أستخدمها</p>
+                            <div class="techniques mt-3">
+                                <span>PHP / Laravel</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
@@ -76,14 +147,12 @@
 
 
     <script src="app/js/jquery.js"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="app/js/lucide.min.js"></script>
     <script src="app/js/wow.js"></script>
-    <!-- <script src="node_modules/animejs/lib/anime.js"></script> -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="app/js/csstransforms.js"></script>
 
+    <script src="src/bootstrap.min.js"></script>
     <!-- <script src="src/anime.js"></script> -->
     <script src="app/js/scripts.js"></script>
 

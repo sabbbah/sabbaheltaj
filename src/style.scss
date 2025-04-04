@@ -2259,26 +2259,19 @@
   }
 }
 
+/*
 :root {
-  /* --sabbahMainColor: #019a06; */
-  /* --sabbahMainColor: #3eb489; */
   --sabbahMainColor: #019a06;
   --sabbahMainColorHov: #04c9ba;
   --sabbahMainColorFad: #04c9ba2e;
   --sabbahMainColorLight: #01d9cbcd;
-
-  /* Text Colors */
   --sabbahTextColor: #2a2a2a;
-
-  /* Button Colors */
   --sabbahButtons: #07bb8d;
-
-  /* Light Sections */
   --sabbahLightSec: #fdf6ec;
-
   --sabbahOverlayBg: #0000002d;
   --sabbahWhiteColor: #ffffff;
 }
+  */
 
 :root {
   --sabbahMainColor: #009b7d;
@@ -3046,19 +3039,30 @@ body {
   }
 
   .offers {
-    .work-services {
-      // display: grid;
-      // grid-template-columns: 1fr 1fr 1fr;
-    }
+    // .work-services {}
     .section {
       .service {
         background-color: #f6f6f6;
 
+        .image {
+          width: 200px;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+
+        .price{
+          background-color: var(--sabbahMainColorFad);
+          color: var(--sabbahMainColor);
+        }
+
         .techniques {
           span {
+            font-weight: 600;
+            font-size: 13px;
             padding: 2px 15px;
             border-radius: 6px;
-            // background-color: #009b7d;
             background-color: var(--sabbahMainColorFad);
             color: var(--sabbahMainColor);
           }
