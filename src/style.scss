@@ -3046,6 +3046,7 @@ body {
 
         .image {
           width: 200px;
+          height: 150px;
           margin: auto;
           img {
             width: 100%;
@@ -3053,6 +3054,7 @@ body {
         }
 
         .price{
+          display: none;
           background-color: var(--sabbahMainColorFad);
           color: var(--sabbahMainColor);
         }

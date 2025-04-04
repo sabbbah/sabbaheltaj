@@ -2831,12 +2831,14 @@ body .about .contact input::placeholder {
 }
 .offers-page .offers .section .service .image {
   width: 200px;
+  height: 150px;
   margin: auto;
 }
 .offers-page .offers .section .service .image img {
   width: 100%;
 }
 .offers-page .offers .section .service .price {
+  display: none;
   background-color: var(--sabbahMainColorFad);
   color: var(--sabbahMainColor);
 }
