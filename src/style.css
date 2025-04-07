@@ -2238,7 +2238,7 @@
   top: 0;
   width: 100%;
   z-index: 20 !important;
-  background-color: #d2efe5;
+  background: none;
 }
 .navbar .content {
   height: inherit;
@@ -2383,12 +2383,14 @@ body .toTop {
   transition: 0.8s;
 }
 body .hero {
-  background-color: #d2efe5;
+  background: transparent;
   margin-top: 2rem;
 }
 body .hero .content {
-  height: calc(100vh - 210px);
+  height: calc(100vh - 60px);
+  position: relative;
   overflow: hidden;
+  z-index: 10;
 }
 body .hero .my-image {
   position: relative;
@@ -2410,6 +2412,9 @@ body .hero .my-image img {
 }
 body .hero .titles {
   width: 800px;
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   /*
   .aurora {
     position: absolute;
@@ -2572,7 +2577,7 @@ body .hero .titles {
       border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
     }
   }
-    */
+  */
 }
 @media (max-width: 769px) {
   body .hero .titles {
@@ -2589,6 +2594,7 @@ body .hero .titles .job-title .rest-of-title {
   position: relative;
   font-weight: 900;
   background: linear-gradient(297deg, #48e96c, rgb(1, 217, 201));
+  background: linear-gradient(238deg, #00c1b7, rgb(0, 216, 118));
   -webkit-background-clip: text;
           background-clip: text;
   font-size: 6rem;
@@ -2602,20 +2608,18 @@ body .hero .titles .job-title .rest-of-title {
 body .hero .titles .job-title .highlighted {
   font-size: 4rem !important;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
-  color: #a6cebc;
+  color: #c5c5c5;
   width: -moz-fit-content;
   width: fit-content;
 }
 body .hero .titles .job-title .highlighted .text {
   position: relative;
-  margin-right: 4px;
   z-index: 1;
 }
 body .hero .titles .job-title .highlighted .shape {
   position: absolute;
-  border: 2px solid #a6cebc;
   width: 280px;
   height: 100px;
   right: -4px;
@@ -2623,6 +2627,7 @@ body .hero .titles .job-title .highlighted .shape {
   z-index: 2;
 }
 body .hero .titles .job-title .highlighted .shape::before {
+  display: none;
   content: "01";
   position: absolute;
   font-size: 17px;
@@ -2635,7 +2640,8 @@ body .hero .titles .job-title .highlighted .shape::before {
   text-align: center;
 }
 body .hero .titles .discover-projects {
-  background-image: linear-gradient(46deg, #13b656, #06d1e3);
+  background-image: linear-gradient(42deg, #ffaa00, rgb(0, 216, 118));
+  background-image: linear-gradient(42deg, #00c1b7, rgb(0, 216, 118));
 }
 body .hero .titles .discover-projects .godown {
   transform: rotate(90deg);
@@ -2659,8 +2665,14 @@ body .hero .char {
 }
 body .hero .wavy-shape {
   position: relative;
-  overflow: hidden;
-  height: 150px;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+}
+body .hero .wavy-shape .matrixCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }
 body .hero .wavy-shape svg {
   position: absolute;
@@ -2670,6 +2682,7 @@ body .hero .wavy-shape svg {
   width: 100vw;
   top: 50%;
   z-index: 5;
+  display: none !important;
 }
 body .hero .wavy-shape use {
   animation: move-forever 2s linear infinite;
@@ -2820,8 +2833,12 @@ body .about .contact input::placeholder {
 }
 
 .offers-page .navbar {
-  background: none;
+  background: var(--sabbahMainColor);
+  color: white;
   position: relative;
+}
+.offers-page .navbar .content {
+  height: unset;
 }
 .offers-page .navbar .links {
   display: none;
@@ -2838,7 +2855,7 @@ body .about .contact input::placeholder {
   width: 100%;
 }
 .offers-page .offers .section .service .price {
-  display: none;
+  display: none !important;
   background-color: var(--sabbahMainColorFad);
   color: var(--sabbahMainColor);
 }

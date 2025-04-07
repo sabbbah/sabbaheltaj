@@ -2364,7 +2364,9 @@
   top: 0;
   width: 100%;
   z-index: 20 !important;
-  background-color: #d2efe5;
+  background: none;
+  // color: white;
+  // background-color: #d2efe5;
 
   // color: #89867e;
 
@@ -2473,8 +2475,6 @@
 }
 
 body {
-  // color: var(--sabbahTextColor);
-  // background-color: #000;
   color: black;
 
   .navbarOnScroll {
@@ -2523,12 +2523,16 @@ body {
   /* ========================== */
 
   .hero {
-    background-color: #d2efe5;
+    // background-color: #d2efe5;
+    background: transparent;
     margin-top: 2rem;
 
     .content {
-      height: calc(100vh - 210px);
+      // color: white;
+      height: calc(100vh - 60px);
+      position: relative;
       overflow: hidden;
+      z-index: 10;
     }
 
     .my-image {
@@ -2552,6 +2556,8 @@ body {
 
     .titles {
       width: 800px;
+      background: #ffffff00;
+      backdrop-filter: blur(3px);
 
       @media (max-width: 769px) {
         width: 100%;
@@ -2571,6 +2577,7 @@ body {
           position: relative;
           font-weight: 900;
           background: linear-gradient(297deg, #48e96c, rgb(1 217 201));
+          background: linear-gradient(238deg, #00c1b7, rgb(0 216 118));
           background-clip: text;
           font-size: 6rem;
           -webkit-text-fill-color: transparent;
@@ -2583,20 +2590,21 @@ body {
         .highlighted {
           font-size: 4rem !important;
           margin: auto;
-          margin-bottom: 2rem;
+          // margin-bottom: 2rem;
+          margin-bottom: 1rem;
           position: relative;
-          color: #a6cebc;
+          color: #c5c5c5;
           width: fit-content;
 
           .text {
             position: relative;
-            margin-right: 4px;
+            // margin-right: 4px;
             z-index: 1;
           }
 
           .shape {
             position: absolute;
-            border: 2px solid #a6cebc;
+            // border: 2px solid #a6cebc;
             width: 280px;
             height: 100px;
             right: -4px;
@@ -2604,6 +2612,7 @@ body {
             z-index: 2;
 
             &::before {
+              display: none;
               content: "01";
               position: absolute;
               font-size: 17px;
@@ -2781,7 +2790,7 @@ body {
           border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
         }
       }
-        */
+      */
 
       .discover-projects {
         // background: #07bb8d;
@@ -2793,7 +2802,9 @@ body {
         // display: inline;
         // -webkit-text-fill-color: transparent;
 
-        background-image: linear-gradient(46deg, #13b656, #06d1e3);
+        // background-image: linear-gradient(46deg, #13b656, #06d1e3);
+        background-image: linear-gradient(42deg, #ffaa00, rgb(0 216 118));
+        background-image: linear-gradient(42deg, #00c1b7, rgb(0 216 118));
 
         .godown {
           transform: rotate(90deg);
@@ -2822,8 +2833,16 @@ body {
 
     .wavy-shape {
       position: relative;
-      overflow: hidden;
-      height: 150px;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+
+      .matrixCanvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        // background-color: #0d0d0d;
+      }
 
       svg {
         position: absolute;
@@ -2833,6 +2852,7 @@ body {
         width: 100vw;
         top: 50%;
         z-index: 5;
+        display: none !important;
       }
 
       use {
@@ -3030,8 +3050,13 @@ body {
 
 .offers-page {
   .navbar {
-    background: none;
+    background: var(--sabbahMainColor);
+    color: white;
     position: relative;
+
+    .content {
+      height: unset;
+    }
 
     .links {
       display: none;
@@ -3053,8 +3078,8 @@ body {
           }
         }
 
-        .price{
-          display: none;
+        .price {
+          display: none !important;
           background-color: var(--sabbahMainColorFad);
           color: var(--sabbahMainColor);
         }

@@ -59,3 +59,43 @@ $(".toTop").click(function () {
         behavior: "smooth"
     });
 });
+
+
+
+// MATRIX BACKGROUND
+const canvas = $("#matrixCanvas")[0];
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const chars = '0123456ABCDEF';
+const fontSize = 16;
+const cols = canvas.width / fontSize;
+const drops = Array.from({ length: cols }).fill(1);
+
+
+function draw() {
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = 'rgb(75, 220, 75)';
+    ctx.fillStyle = 'rgb(0, 193, 183)';
+    ctx.font = `${fontSize}px monospace`;
+
+
+    drops.forEach((y, ind) => {
+        const txt = chars.charAt(Math.floor(Math.random() * chars.length));
+        const x = ind * fontSize;
+        ctx.fillText(txt, x, y * fontSize);
+
+        if (y * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[ind] = 0;
+        }
+        drops[ind]++;
+    });
+}
+
+setInterval(() => {
+    draw();
+}, 40);
