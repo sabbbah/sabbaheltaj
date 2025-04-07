@@ -2666,6 +2666,7 @@ body .hero .char {
 body .hero .wavy-shape {
   position: relative;
   position: absolute;
+  overflow: hidden;
   height: 100vh;
   top: 0;
 }
