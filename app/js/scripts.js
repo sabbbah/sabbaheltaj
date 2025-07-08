@@ -1,4 +1,6 @@
 lucide.createIcons();
+
+// AOS
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -22,17 +24,28 @@ AOS.init({
 
 });
 
+
+// CLICKING ON HUMBURGER ICON
+// TO TOGGLE THE LINKS MENU
 $(".menu").click(function () {
     $(".navbar .links").toggle(600);
 });
 
 
-$(".links a").click(function () {
-    $(".links").hide(1000);
-});
+// IF THE USER IS USING MOBILE PHONE
+// HIDE THE LINKS MENU AFTER CLICKING
+// ON EACH OF THE LINKS
+
+let screenWidth = window.innerWidth;
+if (screenWidth <= 500) {
+    $(".links a").click(function () {
+        $(".links").hide(1000);
+    });
+}
 
 
-
+// TOGGLE THE TO-TOP-BUTTON
+// ON THE SCROLLING 
 $(window).scroll(function () {
     if (window.scrollY >= 500) {
         $(".navbar").addClass("navbarOnScroll");
@@ -50,7 +63,6 @@ if (window.scrollY >= 500) {
     $(".navbar").removeClass("navbarOnScroll");
     $(".toTop").css("right", "-20rem");
 }
-
 
 $(".toTop").click(function () {
     window.scrollTo({
@@ -96,6 +108,4 @@ function draw() {
     });
 }
 
-setInterval(() => {
-    draw();
-}, 40);
+setInterval(() => { draw(); }, 40);
