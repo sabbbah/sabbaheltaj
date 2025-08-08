@@ -2311,8 +2311,8 @@
 
 @font-face {
   font-family: "IranSans";
-  src: url("/app/fonts/IRAN_Sans_Regular.ttf") format("ttf"),
-    url("/app/fonts/IRAN_Sans_Bold.ttf") format("ttf");
+  src: url("../app/IRAN_Sans_Regular.ttf") format("ttf"),
+    url("../app/IRAN_Sans_Bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
