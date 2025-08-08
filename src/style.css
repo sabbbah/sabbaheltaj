@@ -2200,12 +2200,10 @@
 
 @font-face {
   font-family: "IranSans";
-  src: url("../app/IRAN_Sans_Regular.ttf") format("ttf"), url("../app/IRAN_Sans_Bold.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../app/fonts/IranSansX/IRANSansX Regular.ttf");
 }
 * {
-  font-family: "IranSans" !important;
+  font-family: "IBM Plex Sans Arabic" !important;
   scroll-behavior: smooth;
 }
 
