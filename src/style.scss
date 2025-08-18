@@ -2274,13 +2274,19 @@
   */
 
 :root {
-  --sabbahMainColor: #009b7d;
-  --sabbahMainColorHov: #068c71;
-  --sabbahMainColorFad: #009b7d1a;
+  // --sabbahMainColor: #009b7d;
+  // --sabbahMainColorHov: #068c71;
+  // --sabbahMainColorFad: #009b7d1a;
+
+  --sabbahMainColor: #21db73;
+  --sabbahMainColorHov: #1ccb68;
+  --sabbahMainColorFad: #21db731a;
+  --sabbahMainSectionsBGC: #21db7380;
+  --sabbahDarkBG: #374c62;
 
   /* Complementary Colors */
   --sabbahTextColor: #2a2a2a;
-  --sabbahButtons: #009b7d;
+  --sabbahButtons: #079c48;
   --sabbahLightSec: #f4f7f6;
   --sabbahOverlayBg: #00000033;
   --sabbahWhiteColor: #ffffff;
@@ -2317,10 +2323,19 @@
     url("../app/fonts/IranSansX/IRANSansX\ Regular.ttf");
 }
 
+@font-face {
+  font-family: "Handicrafts";
+  src:
+  // url("../app/fonts/IranSansX/IRANSansX\ Bold.ttf"),
+    // url("../app/fonts/IranSansX/IRANSansX\ Medium.ttf"),
+    url("../app/fonts/Handicrafts/alfont_com_alfont_com_TheYearofTheCamel-Medium.otf");
+}
+
 * {
   // font-family: "IRANSANSX" !important;
   // font-family: "IranSans" !important;
-  font-family: "IBM Plex Sans Arabic" !important;
+  // font-family: "IBM Plex Sans Arabic";
+  font-family: "The Year of Handicrafts" !important;
   scroll-behavior: smooth;
 }
 
@@ -2328,15 +2343,14 @@
   .boxes {
     .box {
       position: relative;
-      background-color: #0181603b;
-      border: 1px solid #04a37a;
+      background-color: var(--sabbahMainColorFad);
 
       .content {
         align-items: center;
         text-align: center;
 
         .icon {
-          color: #50ffb5;
+          color: white;
           background-color: var(--sabbahMainColorHov);
         }
       }
@@ -2368,7 +2382,7 @@
 // ==========================
 
 .navbar {
-  height: 60px;
+  height: 80px;
   background: inherit;
   position: fixed;
   top: 0;
@@ -2387,8 +2401,8 @@
   .menu {
     i,
     svg {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -2451,6 +2465,10 @@
     }
   }
 
+  .brand_name {
+    font-size: 30px;
+  }
+
   .cl-effect-5 a {
     padding: 10px 8px;
     overflow: hidden;
@@ -2485,10 +2503,13 @@
 }
 
 body {
-  color: black;
+  // color: black;
+  color: #ecf0f1;
+  background: #2c3e50;
 
   .navbarOnScroll {
-    background: #ffffff40;
+    // background: #ffffff40;
+    background: rgb(83 82 82 / 25%);
     backdrop-filter: blur(5px);
 
     .menu,
@@ -2535,11 +2556,12 @@ body {
   .hero {
     // background-color: #d2efe5;
     background: transparent;
-    margin-top: 2rem;
+    // margin-top: 2rem;
 
     .content {
       // color: white;
-      height: calc(100vh - 60px);
+      // height: calc(100vh - 60px);
+      height: 100vh;
       position: relative;
       overflow: hidden;
       z-index: 10;
@@ -2568,6 +2590,7 @@ body {
       width: 800px;
       background: #ffffff00;
       backdrop-filter: blur(3px);
+      // font-family: "The Year of Handicrafts" !important;
 
       @media (max-width: 769px) {
         width: 100%;
@@ -2586,8 +2609,10 @@ body {
         .rest-of-title {
           position: relative;
           font-weight: 900;
-          background: linear-gradient(297deg, #48e96c, rgb(1 217 201));
-          background: linear-gradient(238deg, #00c1b7, rgb(0 216 118));
+          // background: linear-gradient(297deg, #48e96c, rgb(1 217 201));
+          // background: linear-gradient(238deg, #00c1b7, rgb(0 216 118));
+          // background: linear-gradient(20deg, #ffffff, #3498db);
+          background: linear-gradient(20deg, #ffffff, #00af4d);
           background-clip: text;
           font-size: 6rem;
           -webkit-text-fill-color: transparent;
@@ -2600,8 +2625,7 @@ body {
         .highlighted {
           font-size: 4rem !important;
           margin: auto;
-          // margin-bottom: 2rem;
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
           position: relative;
           color: #c5c5c5;
           width: fit-content;
@@ -2636,6 +2660,10 @@ body {
             }
           }
         }
+      }
+
+      .description {
+        font-size: 23px !important;
       }
 
       /*
@@ -2813,8 +2841,10 @@ body {
         // -webkit-text-fill-color: transparent;
 
         // background-image: linear-gradient(46deg, #13b656, #06d1e3);
-        background-image: linear-gradient(42deg, #ffaa00, rgb(0 216 118));
-        background-image: linear-gradient(42deg, #00c1b7, rgb(0 216 118));
+        // background-image: linear-gradient(42deg, #ffaa00, rgb(0 216 118));
+        // background-image: linear-gradient(42deg, #00c1b7, rgb(0 216 118));
+        // background-image: linear-gradient(135deg, #32e625, #3498db);
+        background-image: linear-gradient(167deg, #ced5db, #00af4d);
 
         .godown {
           transform: rotate(90deg);
@@ -2895,7 +2925,7 @@ body {
   .services,
   .projects,
   .experience {
-    background-color: #f6f6f6;
+    // background-color: #f6f6f6;
 
     .content {
       .title {
@@ -2909,8 +2939,20 @@ body {
     }
   }
 
+  .services,
+  .projects,
+  .experience {
+    .content {
+      .box {
+        .title {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+
   .services {
-    background-color: #2bab8b;
+    background-color: var(--sabbahMainSectionsBGC);
     color: white;
   }
 
@@ -2933,8 +2975,8 @@ body {
       }
 
       .box {
-        background-color: white;
-        box-shadow: 0 0 17px 2px #11766a36;
+        // background-color: white;
+        // box-shadow: 0 0 17px 2px #11766a36;
 
         .visit {
           border: 2px solid var(--sabbahMainColor);
@@ -2968,6 +3010,10 @@ body {
               width: 100%;
             }
           }
+        }
+
+        h4 {
+          font-size: 24px !important;
         }
       }
 
@@ -3078,7 +3124,7 @@ body {
     // .work-services {}
     .section {
       .service {
-        background-color: #f6f6f6;
+        background-color: var(--sabbahDarkBG);
 
         .image {
           width: 200px;
@@ -3157,16 +3203,15 @@ body {
           position: relative;
 
           &::after {
-            content: "☄️";
             content: "⚡️";
-            content: "⭐️";
+            // content: "⭐️";
             content: "✨";
             filter: grayscale(1);
             filter: brightness(10);
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
-            right: -44px;
+            left: -23px;
           }
 
           &:last-child {
@@ -3184,10 +3229,10 @@ body {
       }
       .edu {
         .item {
-          background-color: white;
-          .year {
-            background-color: white;
-          }
+          // background-color: white;
+          background-color: var(--sabbahDarkBG);
+          // .year {}
+          // background-color: white;
         }
       }
     }

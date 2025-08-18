@@ -2167,12 +2167,14 @@
 }
   */
 :root {
-  --sabbahMainColor: #009b7d;
-  --sabbahMainColorHov: #068c71;
-  --sabbahMainColorFad: #009b7d1a;
+  --sabbahMainColor: #21db73;
+  --sabbahMainColorHov: #1ccb68;
+  --sabbahMainColorFad: #21db731a;
+  --sabbahMainSectionsBGC: #21db7380;
+  --sabbahDarkBG: #374c62;
   /* Complementary Colors */
   --sabbahTextColor: #2a2a2a;
-  --sabbahButtons: #009b7d;
+  --sabbahButtons: #079c48;
   --sabbahLightSec: #f4f7f6;
   --sabbahOverlayBg: #00000033;
   --sabbahWhiteColor: #ffffff;
@@ -2202,22 +2204,25 @@
   font-family: "IranSans";
   src: url("../app/fonts/IranSansX/IRANSansX Regular.ttf");
 }
+@font-face {
+  font-family: "Handicrafts";
+  src: url("../app/fonts/Handicrafts/alfont_com_alfont_com_TheYearofTheCamel-Medium.otf");
+}
 * {
-  font-family: "IBM Plex Sans Arabic" !important;
+  font-family: "The Year of Handicrafts" !important;
   scroll-behavior: smooth;
 }
 
 .section .boxes .box {
   position: relative;
-  background-color: rgba(1, 129, 96, 0.231372549);
-  border: 1px solid #04a37a;
+  background-color: var(--sabbahMainColorFad);
 }
 .section .boxes .box .content {
   align-items: center;
   text-align: center;
 }
 .section .boxes .box .content .icon {
-  color: #50ffb5;
+  color: white;
   background-color: var(--sabbahMainColorHov);
 }
 .section .boxes .box .shape {
@@ -2236,7 +2241,7 @@
 }
 
 .navbar {
-  height: 60px;
+  height: 80px;
   background: inherit;
   position: fixed;
   top: 0;
@@ -2249,8 +2254,8 @@
 }
 .navbar .menu i,
 .navbar .menu svg {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .navbar .links {
   position: relative;
@@ -2309,6 +2314,9 @@
     display: block !important;
   }
 }
+.navbar .brand_name {
+  font-size: 30px;
+}
 .navbar .cl-effect-5 a {
   padding: 10px 8px;
   overflow: hidden;
@@ -2333,7 +2341,8 @@
 }
 
 body {
-  color: black;
+  color: #ecf0f1;
+  background: #2c3e50;
   /* Overlay */
   /* ========================== */
   /* ========== HERO ========== */
@@ -2349,7 +2358,7 @@ body {
   /* ========================== */
 }
 body .navbarOnScroll {
-  background: rgba(255, 255, 255, 0.2509803922);
+  background: rgba(83, 82, 82, 0.25);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
@@ -2388,10 +2397,9 @@ body .toTop {
 }
 body .hero {
   background: transparent;
-  margin-top: 2rem;
 }
 body .hero .content {
-  height: calc(100vh - 60px);
+  height: 100vh;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -2597,8 +2605,7 @@ body .hero .titles .job-title {
 body .hero .titles .job-title .rest-of-title {
   position: relative;
   font-weight: 900;
-  background: linear-gradient(297deg, #48e96c, rgb(1, 217, 201));
-  background: linear-gradient(238deg, #00c1b7, rgb(0, 216, 118));
+  background: linear-gradient(20deg, #ffffff, #00af4d);
   -webkit-background-clip: text;
           background-clip: text;
   font-size: 6rem;
@@ -2612,7 +2619,6 @@ body .hero .titles .job-title .rest-of-title {
 body .hero .titles .job-title .highlighted {
   font-size: 4rem !important;
   margin: auto;
-  margin-bottom: 1rem;
   position: relative;
   color: #c5c5c5;
   width: -moz-fit-content;
@@ -2643,9 +2649,11 @@ body .hero .titles .job-title .highlighted .shape::before {
   height: 20px;
   text-align: center;
 }
+body .hero .titles .description {
+  font-size: 23px !important;
+}
 body .hero .titles .discover-projects {
-  background-image: linear-gradient(42deg, #ffaa00, rgb(0, 216, 118));
-  background-image: linear-gradient(42deg, #00c1b7, rgb(0, 216, 118));
+  background-image: linear-gradient(167deg, #ced5db, #00af4d);
 }
 body .hero .titles .discover-projects .godown {
   transform: rotate(90deg);
@@ -2707,11 +2715,6 @@ body .hero .wavy-shape use:nth-child(1) {
     transform: translate(0px, 0);
   }
 }
-body .services,
-body .projects,
-body .experience {
-  background-color: #f6f6f6;
-}
 body .services .content .title,
 body .projects .content .title,
 body .experience .content .title {
@@ -2723,8 +2726,13 @@ body .experience .content .title p {
   position: relative;
   font-weight: 600;
 }
+body .services .content .box .title,
+body .projects .content .box .title,
+body .experience .content .box .title {
+  font-size: 23px;
+}
 body .services {
-  background-color: #2bab8b;
+  background-color: var(--sabbahMainSectionsBGC);
   color: white;
 }
 body .projects {
@@ -2735,10 +2743,6 @@ body .projects .content .title p::before {
 }
 body .projects .content .title p::after {
   left: -55%;
-}
-body .projects .content .box {
-  background-color: white;
-  box-shadow: 0 0 17px 2px rgba(17, 118, 106, 0.2117647059);
 }
 body .projects .content .box .visit {
   border: 2px solid var(--sabbahMainColor);
@@ -2767,6 +2771,9 @@ body .projects .content .box .visit:hover {
 }
 body .projects .content .box .visit:hover::before {
   width: 100%;
+}
+body .projects .content .box h4 {
+  font-size: 24px !important;
 }
 body .projects .content .image {
   height: 250px;
@@ -2849,7 +2856,7 @@ body .about .contact input::placeholder {
   display: none;
 }
 .offers-page .offers .section .service {
-  background-color: #f6f6f6;
+  background-color: var(--sabbahDarkBG);
 }
 .offers-page .offers .section .service .image {
   width: 200px;
@@ -2914,16 +2921,14 @@ body .about .contact input::placeholder {
 .experience .content .education .skills .name::after,
 .experience .content .skills .skills .name::after,
 .experience .content .other-skills .skills .name::after {
-  content: "☄️";
   content: "⚡️";
-  content: "⭐️";
   content: "✨";
   filter: grayscale(1);
   filter: brightness(10);
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  right: -44px;
+  left: -23px;
 }
 .experience .content .education .skills .name:last-child::after,
 .experience .content .skills .skills .name:last-child::after,
@@ -2939,12 +2944,7 @@ body .about .contact input::placeholder {
 .experience .content .education .edu .item,
 .experience .content .skills .edu .item,
 .experience .content .other-skills .edu .item {
-  background-color: white;
-}
-.experience .content .education .edu .item .year,
-.experience .content .skills .edu .item .year,
-.experience .content .other-skills .edu .item .year {
-  background-color: white;
+  background-color: var(--sabbahDarkBG);
 }
 
 /* ========================== */
