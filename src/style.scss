@@ -2615,9 +2615,11 @@ body {
           background-clip: text;
           font-size: 6rem;
           -webkit-text-fill-color: transparent;
+          width: 500px;
 
           @media (max-width: 769px) {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
+            width: 100%;
           }
         }
 
@@ -2662,7 +2664,7 @@ body {
       }
 
       .description {
-        font-size: 23px !important;
+        font-size: 26px !important;
       }
 
       /*
