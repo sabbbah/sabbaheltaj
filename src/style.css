@@ -2209,7 +2209,7 @@
   src: url("../app/fonts/Handicrafts/alfont_com_alfont_com_TheYearofTheCamel-Medium.otf");
 }
 * {
-  font-family: "The Year of Handicrafts" !important;
+  font-family: "Handicrafts" !important;
   scroll-behavior: smooth;
 }
 
